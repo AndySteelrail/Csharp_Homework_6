@@ -12,7 +12,7 @@ public class Program
 		double[] InputNumbers()
         {
             Console.WriteLine("Введите числа через точку с запятой");
-            string input = String.Empty + Console.ReadLine();
+            string input = Console.ReadLine()??"";
             string[] inputs = input.Split(';');
             double[] inputNumbers = new double[inputs.Length];
             for (int i=0; i<inputs.Length; i++)
